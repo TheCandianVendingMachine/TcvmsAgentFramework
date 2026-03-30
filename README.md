@@ -1,40 +1,31 @@
-# ArmA 3 Mod Template
+# TCVM's Agent Framework
 
-This repository provides a template for creating and organizing an ArmA 3 mod project.
+This mod provides utilities for developers to create large scale agent behaviours.
 
-This project is on [GitHub](https://github.com/Lupus590/ArmA-3-Mod-Template).
+This mod does **not** change any default AI behaviour, it is purely used as a dependency.
+
+This project is on [GitHub](https://github.com/TheCandianVendingMachine/TcvmsAgentFramework).
 
 ## About
 
-This template is designed to help you quickly start developing your own ArmA 3 mods by providing a well-organized project structure, example configuration files, and clear documentation.
-It aims to simplify setup, encourage best practices, and save time for both new and experienced modders.
+This mod provides tools to simulate agents more deeply than what ARMA allows by default. This includes path finding,
+steering behaviours, and movement handling.
 
-You are encouraged to customize any part of the template to fit your project's needs.
+As a developer, you can use the public API to generate navigation meshes (navmesh) and flow-fields for areas, and then have agents use them
+to navigate the world. Likewise, there ways to generate a navigation mesh for the entire map and use that.
 
-## Getting Started
+This mod uses extensions. The extensions are the core of how the navmeshes and flow-fields are generated.
 
-1. Click on `Use this template` (green button top right).
-2. Run any of the `setup` scripts, you may need to install powershell.
-3. Once setup has successfully ran you can delete the `setup`, `convertToLFS`, and `enableWorkflows` script files as you will nolonger need them.
-4. Choose a license for your project (see `LICENSE.md`).
-5. Update `.hemtt/presets/main.html` with your modlist.
-6. Edit `.hemtt/project.toml` with your project details.
-7. Fix the prefix for the core addon.
-8. Review and adjust the documentation in `meta/doc/*` to fit your workflow.
-9. Update this README to reflect your project.
+This mod will _not_ change any AI behaviour by default. You must register agents to the handler in order for them to be used.
+Further documentation will be available at a later date.
 
 ## Requirements
 
-- [PowerShell](https://github.com/PowerShell/PowerShell/releases/latest) required for running the setup and build scripts on all platforms
 - [HEMTT](https://github.com/BrettMayson/HEMTT/releases/latest) required for building and testing
-- [ArmA 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/) optional but recommended, used for uploading the mod to the workshop, also used by HEMTT for advanced checking I believe
-- [Visual Studio Code](https://code.visualstudio.com/) config editing, you may use codium or any other editor just be aware that getting the addons may be harder
-- [Hemtt addon for VSCode](https://marketplace.visualstudio.com/items?itemName=BrettMayson.hemtt) adds several nice to have features to VSCode which makes config editing easier and doubles as a PAA viewer
-- [EditorConfig for VSCode](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) makes maintaining a code style partly automatic
 
 ## License
 
-This template is licensed under [CC0 1.0 Universal](LICENSE.md).
+This mod is licensed under [GPL 3.0](LICENSE.md). Please report any violations to the mod author.
 
 
 
