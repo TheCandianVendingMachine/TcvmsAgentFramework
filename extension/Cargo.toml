@@ -3,5 +3,9 @@ name = "TcvmsAgentFramework"
 version = "1.0.0"
 edition = "2024"
 
+[lib]
+name = "tcvms_agent_framework"
+crate-type = ["cdylib"]
+
 [dependencies]
 arma-rs = "1.12.1"
