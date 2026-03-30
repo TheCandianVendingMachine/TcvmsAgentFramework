@@ -1,5 +1,4 @@
 # Contributor Covenant Code of Conduct
 
-I'm not knowledgeable enough in this area to confidently advise, you probably want something, maybe informed by the rules of your Arma unit.
-
-You can probably find advice online too.
+If you use AI to publish pull requests or issues, please state it clearly at the top of the form. If you do not, the issue and/or pull request will be closed without any action.
+Don't be a dick to me. I am doing this because I enjoy ARMA development, and I will not tolerate any harassment towards me.
