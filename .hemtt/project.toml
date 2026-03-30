@@ -1,6 +1,6 @@
-name = "ArmA-3-Mod-Template"
-author = "Lupus590"
-prefix = "template"
+name = "TCVMs Agent Framework"
+author = "tcvm"
+prefix = "taf"
 mainprefix = "z"
 
 [version]
@@ -17,7 +17,7 @@ include = [
 ]
 
 [hemtt.release]
-folder = "ArmA-3-Mod-Template"
+folder = "tcvms-agent-framework"
 
 [hemtt.launch.default]
 presets = [
@@ -31,6 +31,6 @@ parameters = [
 	"-filePatching",
 ]
 executable = "arma3_x64" # Default: "arma3_x64"
-file_patching = false # Default: true
-binarize = true # Default: false
-rapify = false # Default: true
+file_patching = true # Default: true
+binarize = false # Default: false
+rapify = true # Default: true
